@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style> 
+    .leftimg {float:left; /* Выравнивание по левому краю */
+            margin: 7px 7px 7px 1px; /* Отступы вокруг картинки */
+           }
+    p {font-size: 20px}
+    </style>
+<body>
+    <h1>Вакансия: Junior Frontend Developer</h1>
+   <p> 
+    <img src="./portret.jpg " width="300" height="220" class="leftimg" alt="Прискорбно, если тут нет фотки"> 
+    Имя:  Мария Корнеева </p>
+  <p>  <a href="https://github.com/mashko"> Ссылочка на Github</a> </p>
+  <p>Опыт работы: нет</p>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <form>
+        <p><label for="date">Дата собеседования: </label>
+            <input type="date" id="date" name="date"/>
+        </p>
+        <p> <label for="radio"> Уровень английского: </label>
+         <input type="radio" id="Плохо" value="Плохо" name="Уровень англа" > <label for="Плохо" class="light"> Плохо</label>
+         <input type="radio" id="Средне" value="Средне" name="Уровень англа" > <label for="Средне" class="light"> Средне</label>
+         <input type="radio" id="Хорошо" value="Хорошо" name="Уровень англа" > <label for="Хорошо" class="light">Хорошо </label>
+         <input type="radio" id="Превосходно" value="Превосходно" name="Уровень англа" > <label for="Превосходно" class="light">Превосходно </label>
+        </p>
+<p>Ключевые навыки:
+    <ul>
+     <li><big>HTML</big></li>
+     <li><big>CSS/LESS</big></li>
+     <li><big>Javascript</big></li>
+     <li><input type="text" id="Навык" name="Навык" placeholder="введите навык"><input type="submit" value="Добавить в список"></li>
+    </ul> //Я не поняла, нормально я сделала кнопку или нет
+
+<p><label for="Коммуникабельность">Коммуникабельность</label>:  
+<select id="Коммуникабельность" name="Коммуникабельность">
+        <option>Выберите значение</option>
+        <option value=" 1">Репетирую все разговоры по телефону дважды</option>
+        <option value="2">Могу неуверенно мяукнуть на вопрос, где станция метро</option>
+        <option value="3">Иногда выхожу из квартиры дальше магазина и разговариваю с одногруппниками</option>
+        <option value="4">Легко поддерживаю беседу с таксистами, шучу с кассиршами в Пятёрочке</option>
+        <option value="5">Не боюсь консультантов в дорогих магазинах </option>
+    </select>
+<p><label for="salary">Желаемая з/п: </label>
+<input type="number" step="1" min="10000" id="salary" name="salary" placeholder="введите значение в рублях">   ₽ 
+ </p>
+<p><label>Подходит по критериям:</label>
+ <input type="checkbox" id="engineering" value="1" name="user_interest"><label class="light" for="engineering">Знание английского</label>
+ <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Оклад</label>
+ <input type="checkbox" id="law" value="interest_law" name="user_interest"><label class="light" for="law">Навыки</label>
+ <input type="checkbox" id="books" value="interest_book" name="user_interest"><label class="light" for="books">Сразу видно, что свой человек</label>
+</p>
+<table border="10">
+        <tbody>
+          <tr>
+            <th>#</th>
+            <th>Сроки обучения</th>
+            <th>Наименование учебного заведения, курсов...</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2018-2022</td>
+            <td>Санкт-Петербургский Политехнический Университет </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2020</td>
+            <td>Курсы Frontend-разработки Level Up</td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
