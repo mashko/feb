@@ -11,24 +11,32 @@
   <div> 
  <h1 class="gradient-head">Вакансия: Junior Frontend Developer</h1>   
     <img src="./portret.jpg " alt="Прискорбно, если тут нет фотки"> 
-    <div><span>Имя:  Мария Корнеева </span></div> </p>
+    <div><span class="main">Имя:</span> <span> Мария Корнеева </span></div> </p>
   <div><span><a href="https://github.com/mashko" class="link">  Github</a></span></div><br> 
-  <div><span>Опыт работы: нет</span> </div>
+  <div><span class="main">Опыт работы:</span> <span>нет</span> </div>
   <br>
-
+<div class="lol">
   <form>
-        <div><span><label for="date">Дата собеседования: </label>
+        <div ><span class="main"><label for="date">Дата собеседования: </label>
             <input type="date" id="date" name="date"/>
         </span></div><br>
-        <span> <label for="radio"> Уровень английского: </label>
-         <input type="radio" id="level1" value="1" name="Уровень англа" > <label for="level1" class="light"> Плохо</label>
-         <input type="radio" id="level2" value="2" name="Уровень англа" > <label for="level2" class="light"> Средне</label>
-         <input type="radio" id="level3" value="3" name="Уровень англа" > <label for="level3" class="light">Хорошо </label>
-         <input type="radio" id="level4" value="4" name="Уровень англа" > <label for="level4" class="light">Превосходно </label>
-        </span>
-        <br><br><br>
+        <span class="main"> Уровень английского:</span>
 
-<p>Ключевые навыки:
+ <input type="radio"  name="radio" class="radio" id="1" />
+<label for="1"> Плохо</label>
+
+<input type="radio" name="radio" class="radio" id="2" />
+<label for="2">Средне</label>
+
+<input type="radio" name="radio" class="radio" id="3" />
+<label for="3">Хорошо</label>
+
+<input type="radio"  name="radio" class="radio" id="4" />
+<label for="4">Отлично</label>
+          
+</div>
+<br>
+<div><span class="main">Ключевые навыки:</span>
     <ul>
      <li><big>HTML</big></li>
      <li><big>CSS/LESS</big></li>
@@ -38,9 +46,9 @@
       <div class="wrap">
         <button class="button">Добавить</button>
       </div>
-   
-
-<p><label for="Коммуникабельность">Коммуникабельность</label>:  
+</div>
+<br>
+<div><span class="main"><label for="Коммуникабельность">Коммуникабельность</label></span>:  
 <select id="Коммуникабельность" name="Коммуникабельность">
         <option>Выберите значение</option>
         <option value=" 1">Репетирую все разговоры по телефону дважды</option>
@@ -49,15 +57,18 @@
         <option value="4">Легко поддерживаю беседу с таксистами, шучу с кассиршами в Пятёрочке</option>
         <option value="5">Не боюсь консультантов в дорогих магазинах </option>
     </select>
-<p><label for="salary">Желаемая з/п: </label>
-<input type="number" step="1" min="10000" id="salary" name="salary" placeholder="введите значение в рублях">   ₽ 
+</div>
+    <br>
+<div> <span class="main"><label for="salary">Желаемая з/п: </span></label>
+<input type="number" step="1" min="10000" id="salary" name="salary" placeholder="введите значение в рублях">₽  </div>  
  </p>
-<p><label>Подходит по критериям:</label>
+ <div>
+<span class="main"><label>Подходит по критериям:</label></span>
  <input type="checkbox" id="engineering" value="1" name="user_interest"><label class="light" for="engineering">Знание английского</label>
  <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Оклад</label>
  <input type="checkbox" id="law" value="interest_law" name="user_interest"><label class="light" for="law">Навыки</label>
  <input type="checkbox" id="books" value="interest_book" name="user_interest"><label class="light" for="books">Сразу видно, что свой человек</label>
-</p>
+</div>
 <table >
         <tbody>
           <tr>

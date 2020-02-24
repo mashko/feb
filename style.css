@@ -12,6 +12,56 @@ img {float: left;
 }
 span {padding-left: 10px;
 }
+.main{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: cornflowerblue;
+  font-weight : bold;
+  letter-spacing: 2px;
+}
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+	cursor: pointer;
+}
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background:rgba(226, 105, 180, 0.404);
+	box-shadow: inset 0 1px 1px rgba(250, 144, 144, 0.5);
+	opacity: 0;
+	transition: .2s;
+}
+.radio:checked + label:after {
+	opacity: 1;
+}
+.radio:focus + label:before {
+	box-shadow: 0 0 0 3px rgba(110, 195, 216, 0.7);
+}
+
+.lol {margin-top: 140px;}
 .link {border:1px solid rgb(138, 213, 236); /*рамка*/
     border-radius: 10px;
     background: none; /*фон*/
@@ -49,7 +99,6 @@ input  {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    */font-weight: 700;*/
     color: #313133;
     background:#4FD1C5;
   background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
